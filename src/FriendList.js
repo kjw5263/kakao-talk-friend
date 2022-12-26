@@ -61,6 +61,8 @@ export default (props) => {
    * ex) true && 2 => 2  앞의값이 true이기 때문에 뒷값도 확인하여, 결과는 2가 된다.
    */
   return (
+    // ScrollView 는 데이터가 단순히 화면이 벗어났을 때 스크롤을 생성해서 스와이프를 통해 벗어난 부분을 확인할 수 있도록 해준다. 데이터의 양이 많지 않고 고정적일 때 주로 사용
+    // 친구 목록에는 적합 X -> flatList, 화면에 보여지는 부분만 렌더링 하기 때문ㅇ ㅔ 성능상 뛰어남
     props.isOpened && (
       <ScrollView showsVerticalScrollIndicator={false}>
         {props.data.map((item, index) => (

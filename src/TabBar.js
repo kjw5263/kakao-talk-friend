@@ -47,7 +47,7 @@ export default ({ selectedTabIdx, setSelectedTabIdx }) => {
         width: "100%",
         // height: 50,
         flexDirection: "row",
-        paddingBottom: Platform.OS === "ios" ? 30 : 0,
+        // paddingBottom: Platform.OS === "ios" ? 30 : 0,
         borderTopWidth: 0.5,
         borderTopColor: "grey",
       }}
