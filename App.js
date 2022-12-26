@@ -70,6 +70,8 @@ export default function App() {
   };
 
   return (
+    // scrollView 는 데이터가 별ㄹ ㅗ없을 때 적절 하고,
+    // FlatList 는 많은양의 데이터를 렌더링할 때 적절하다. 화면에 보여지는 부분만 렌더링하기 때문이다.
     <SafeAreaProvider>
       <SafeAreaView edges={["top", "bottom"]} style={styles.container}>
         <FlatList
